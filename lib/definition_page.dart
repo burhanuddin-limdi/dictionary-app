@@ -108,10 +108,12 @@ class _DefinitionPageState extends State<DefinitionPage> {
                         ),
                       ),
                       Container(
-                          margin: const EdgeInsets.only(bottom: 15),
-                          child: IconButton(
-                              onPressed: () {},
-                              icon: const Icon(Icons.volume_up)))
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.volume_up),
+                        ),
+                      )
                     ],
                   ),
                   Text(
@@ -133,7 +135,9 @@ class _DefinitionPageState extends State<DefinitionPage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Padding(padding: EdgeInsets.only(top: 7)),
+                                const Padding(
+                                  padding: EdgeInsets.only(top: 7),
+                                ),
                                 const Text('Phrase'),
                                 Text(
                                   (i.example).toString(),

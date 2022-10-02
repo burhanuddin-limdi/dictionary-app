@@ -24,10 +24,14 @@ class Definition {
       : word = json['word'] as String?,
         phonetic = json['phonetic'] as String?,
         phonetics = (json['phonetics'] as List?)
-            ?.map((dynamic e) => Phonetics.fromJson(e as Map<String, dynamic>))
+            ?.map(
+              (dynamic e) => Phonetics.fromJson(e as Map<String, dynamic>),
+            )
             .toList(),
         meanings = (json['meanings'] as List?)
-            ?.map((dynamic e) => Meanings.fromJson(e as Map<String, dynamic>))
+            ?.map(
+              (dynamic e) => Meanings.fromJson(e as Map<String, dynamic>),
+            )
             .toList(),
         license = (json['license'] as Map<String, dynamic>?) != null
             ? License.fromJson(json['license'] as Map<String, dynamic>)
@@ -108,7 +112,8 @@ class Meanings {
       : partOfSpeech = json['partOfSpeech'] as String?,
         definitions = (json['definitions'] as List?)
             ?.map(
-                (dynamic e) => Definitions.fromJson(e as Map<String, dynamic>))
+              (dynamic e) => Definitions.fromJson(e as Map<String, dynamic>),
+            )
             .toList(),
         synonyms = json['synonyms'] as List?,
         antonyms = json['antonyms'] as List?;

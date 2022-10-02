@@ -98,13 +98,14 @@ class _HomePageState extends State<HomePage> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(7), // <-- Radius
-                        ),
-                        elevation: 0.0,
-                        padding: const EdgeInsets.symmetric(horizontal: 25),
-                        textStyle: const TextStyle(color: Colors.black),
-                        backgroundColor: const Color(0xffb1b2ff)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(7), // <-- Radius
+                      ),
+                      elevation: 0.0,
+                      padding: const EdgeInsets.symmetric(horizontal: 25),
+                      textStyle: const TextStyle(color: Colors.black),
+                      backgroundColor: const Color(0xffb1b2ff),
+                    ),
                     child: const Text(
                       'Search',
                       style: TextStyle(color: Colors.black),
